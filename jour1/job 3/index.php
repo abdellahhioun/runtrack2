@@ -8,10 +8,7 @@
         body{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 40px;
-        
         }
-            
-
 
     </style>
 </head>
@@ -33,20 +30,20 @@ echo"
     <tbody class test>
     <tr>
             <td> integer </td>
-            <td> 19 </td>
+            <td> sin1 </td>
             <td>" . $sin1 . "</td>
     </tr>
     <tr>
             <td> float </td>
-            <td> 1.1 </td>
+            <td> sin2 </td>
             <td>. $sin2 . </td>
     <tr>
             <td> string </td>
-            <td> siuuuu </td>
+            <td> sin3 </td>
             <td> . $sin3 . </td>
     <tr>
             <td> boolean </td>
-            <td> true </td>
+            <td> sin4 </td>
             <td> . $sin4 . </td>
     </tbody>
 </table>
