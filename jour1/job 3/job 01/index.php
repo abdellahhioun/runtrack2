@@ -1,20 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
 <?php
-$str= "laplateforme";
-echo $str;
-$str2 = "Vive";
-$str3 = "!";
-echo $str2 . $str . $str3;
-$val = 6;
-echo $val;
-$val +=4;
-echo $val;
-$myBool = true;
-echo $myBool;
-$myBool = false;
-echo $myBool;
+$sin1 = 19;
+$sin2 = 1.1;
+$sin3 = "siuuu";
+$sin4 = true;
 
-
+echo"
+<table border='1'>
+    <thead>
+        <tr>
+            <th>type</>
+            <th>name</>
+            <th>value</>
+        </tr>
+    <tbody class test>
+    <tr>
+            <td> integer </td>
+            <td> sin1 </td>
+            <td>" . $sin1 . "</td>
+    </tr>
+    <tr>
+            <td> float </td>
+            <td> sin2 </td>
+            <td>. $sin2 . </td>
+    <tr>
+            <td> string </td>
+            <td> sin3 </td>
+            <td> . $sin3 . </td>
+    <tr>
+            <td> boolean </td>
+            <td> sin4 </td>
+            <td> . $sin4 . </td>
+    </tbody>
+</table>
+";
 
 
 
 ?>
+
+</body>
+</html>
+
