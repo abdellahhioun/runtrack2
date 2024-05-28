@@ -36,15 +36,15 @@ echo"
     <tr>
             <td> float </td>
             <td> sin2 </td>
-            <td>. $sin2 . </td>
+            <td>". $sin2 ." </td>
     <tr>
             <td> string </td>
             <td> sin3 </td>
-            <td> . $sin3 . </td>
+            <td> ". $sin3 ." </td>
     <tr>
             <td> boolean </td>
             <td> sin4 </td>
-            <td> . $sin4 . </td>
+            <td> ". $sin4 ." </td>
     </tbody>
 </table>
 ";
