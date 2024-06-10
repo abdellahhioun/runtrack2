@@ -1,28 +1,28 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    
-    $login = $_POST['login'];
-    $password = $_POST['password'];
-    $password_confirm = $_POST['confirme_password'];
+$login = $_POST['login'];
+$password = $_POST['password'];
+$password_confirm = $_POST['password_confirm'];
 
-if($password === $password_confirm){
-$hash = password_hash($password, PASSWORD_BCRYPT);
-$conn = new mysqli('localhost','root','','livreor');
-$stmt = $conn->prepare("INSERT INTO utilisateurs (login,password) VALUES (?,?)");
-$stmt-> bind_param("ss",$login, $hash);
-$stmt-> execute();
-$stmt->close();
-$conn->close();
+if ($password === $password_confirm){
+    $hash = password_hash($password, PASSWORD_BCRYPT);
+    $conn = new mysqli('localhost', 'root', '','livreor');
+    $stmt = $conn->prepare("INSERT INTO utilisateurs (login,password) VALUES (?,?)");
+    $stmt-> bind_param("ss",$login, $hash);
+    $stmt-> execute();
+    $stmt->close();
+    $conn->close();
 
-header('location: connexion.php');
-exit();
+    header('location: connexion.php');
+    exit();
+
 
 }else{
     echo "Les mots de pass ne correspondent pas";
 }
+
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,6 +44,21 @@ exit();
 <a href="connexion.php">Déja inscrit ? Connecter-vous ici</a>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
