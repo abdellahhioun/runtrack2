@@ -1,0 +1,82 @@
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the welcome message */
+.welcome-message {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.welcome-message h1 {
+    font-size: 2em;
+    color: #00529b;
+    margin: 10px 0; /* Adjust margin for spacing */
+}
+
+/* Style the logo */
+.welcome-message .logo {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px; /* Space between the logo and the welcome text */
+}
+
+/* Style the form container */
+form {
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Style the form labels */
+form label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+    color: #333333;
+}
+
+/* Style the form inputs */
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Style the submit button */
+form input[type="submit"] {
+    width: 100%;
+    padding: 0.75em;
+    border: none;
+    border-radius: 5px;
+    background-color: #00529b;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0;
+}

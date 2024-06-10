@@ -1,9 +1,9 @@
 <?php
-session_start(); // Start the session
+session_start(); 
 
-// Check if the logged-in user is the admin
+
 if (!isset($_SESSION['user_name']) || $_SESSION['user_name'] != 'admin') {
-    header("Location: login.php"); // Redirect to login page if not admin
+    header("Location: login.php"); 
     exit();
 }
 
@@ -27,13 +27,13 @@ if (isset($_GET['id'])) {
     $request->bindParam(':id', $user_id);
 
     if ($request->execute()) {
-        header("Location: admin.php"); // Redirect to admin page after deletion
+        header("Location: admin.php"); 
         exit();
     } else {
         echo "Erreur lors de la suppression de l'utilisateur.";
     }
 } else {
-    header("Location: admin.php"); // Redirect to admin page if no user ID is provided
+    header("Location: admin.php");
     exit();
 }
 ?>

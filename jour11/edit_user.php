@@ -1,9 +1,8 @@
 <?php
-session_start(); // Start the session
+session_start(); 
 
-// Check if the logged-in user is the admin
 if (!isset($_SESSION['user_name']) || $_SESSION['user_name'] != 'admin') {
-    header("Location: login.php"); // Redirect to login page if not admin
+    header("Location: login.php"); 
     exit();
 }
 
@@ -51,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $update_request->bindParam(':id', $user_id);
 
     if ($update_request->execute()) {
-        header("Location: admin.php"); // Redirect to admin page after update
+        header("Location: admin.php"); 
         exit();
     } else {
         echo "Erreur lors de la mise à jour de l'utilisateur.";
@@ -64,25 +63,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="edit_user.css"> <!-- Link to your edit_user.css file -->
     <title>Edit User</title>
 </head>
 <body>
-    <h2>Edit User</h2>
+    <div class="container">
+        <h2>Edit User</h2>
 
-    <form method="POST" action="">
-        <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom" value="<?php echo htmlspecialchars($user['nom']); ?>" required><br>
+        <form method="POST" action="">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" value="<?php echo htmlspecialchars($user['nom']); ?>" required><br>
 
-        <label for="prenom">Prénom:</label>
-        <input type="text" id="prenom" name="prenom" value="<?php echo htmlspecialchars($user['prenom']); ?>" required><br>
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" value="<?php echo htmlspecialchars($user['prenom']); ?>" required><br>
 
-        <label for="pseudo">Pseudo:</label>
-        <input type="text" id="pseudo" name="pseudo" value="<?php echo htmlspecialchars($user['pseudo']); ?>" required><br>
+            <label for="pseudo">Pseudo:</label>
+            <input type="text" id="pseudo" name="pseudo" value="<?php echo htmlspecialchars($user['pseudo']); ?>" required><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value="<?php echo htmlspecialchars($user['email']); ?>" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="<?php echo htmlspecialchars($user['email']); ?>" required><br>
 
-        <input type="submit" value="Update User">
-    </form>
+            <input type="submit" value="Update User">
+        </form>
+    </div>
 </body>
 </html>

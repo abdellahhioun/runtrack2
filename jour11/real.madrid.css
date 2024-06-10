@@ -1,0 +1,260 @@
+.logo-blue{
+height: 100;
+
+}
+.real-a {
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+margin-top: 3vw;
+color: gray;
+font-family: "Bebas Neue"
+;
+}
+
+.champions{
+height: 90;
+margin-top: 8px;
+}
+.madrid-a{
+display: flex;
+flex-direction: row;
+}
+header{
+    border-bottom:1px solid #d8cfcf;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.Madridistano{
+border-style:solid;
+padding: 15px;
+border-radius: 20px;
+border-color: rgb(7, 49, 133);
+background-color: rgb(7, 49, 133);
+color: white !important;
+
+}
+.real-a a{
+    margin: 70px;    
+    text-decoration: none;
+    color: gray;
+    }
+.real-madrid-logo{
+width: 100vw;
+margin-top: 0px;
+}
+
+  .WELCOME{
+font-family: "Bebas Neue", sans-serif ;
+font-size: 80px;
+margin-left: 20px;
+margin-top: 0;
+  }
+.logorightside{
+width: 200px;
+margin-bottom: 40px;
+}
+.firstp{
+    font-family: "Changa";
+    font-size: 40px;
+}
+.secondp{
+    font-family: "changa";
+    font-size: 30px;
+}
+.thirdp{
+    font-family: "changa";
+    font-size: 30px;
+}
+.madridistap{
+font-family: "Anton";
+font-size: 25px;
+}
+
+.imgplusp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.p123{
+display: flex;
+flex-direction: column;
+width: 60vw;
+margin-left: 200px;
+}
+.historia{
+font-family:"Bebas Neue";
+font-size: 70px;
+text-decoration:overline;
+display: flex;
+justify-content: center;
+}
+.firstucl{
+    width: 50vw;
+}
+.historiah1{
+font-family: "Anton";
+font-size: 35px;
+}
+.historiap1{
+    font-family:"Bebas Neue";
+font-size: 20px;
+}
+.historiapandh{
+display: flex;
+flex-direction: row;
+
+}
+.handp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.historiap2{
+    font-family: "Bebas Neue";
+    font-size: 25px;
+}
+.bestmomentimgandp{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.meilleur{
+font-family: "Anton";
+font-size: 45px;
+
+}
+.bestmomentimg{
+width: 1000px;
+
+
+}
+.bestmomentp{
+font-family: "Bebas Neue";
+font-size: 25px;
+margin-left: 10px;
+}
+.legends{
+    font-family: "Bebas Neue";
+    font-size: 70px;
+    text-decoration: overline;
+    display: flex;
+    justify-content: center;
+}
+.cassilas{
+width: 440px;
+height: auto;
+}
+.namecassilas{
+font-family: "Bebas Neue";
+font-size: 70px;
+
+}
+.cassilasp{
+font-family: "Bebas Neue";
+font-size: 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: 200px;
+border-style:solid ;
+
+}
+
+.legendscassilas{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 200px;
+}
+
+.ramos{
+width: 430px;
+margin-left: 30vw;
+
+}
+.nameramos{
+font-family: "Bebas Neue";
+font-size: 90px;
+}
+.ramosp{
+display: flex;
+flex-direction: column;
+font-family: "Bebas Neue";
+font-size: 30px;
+align-items: center;
+margin-left: 40px;
+border-style: solid;
+}
+.legendsramos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+}
+.benzimaimg{
+width: 400px;
+}
+.benzimaname{
+font-family: "Bebas Neue";
+font-size: 90px;
+}
+.benzimap{
+display: flex;
+flex-direction: column;
+font-family: "Bebas Neue";
+font-size: 30px;
+align-items: center;
+border-style: solid;
+margin-right: 40px;
+}
+.legendsbenzima{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+.cr7img{
+width: 600px;
+}
+.cr7name{
+font-family: "Bebas Neue";
+font-size: 90px;
+
+}
+.cr7p{
+font-family: "Bebas Neue";
+font-size: 30px;
+
+
+}
+.legendscr7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+.footermadrid{
+width: 80px;
+margin-left: 30px;
+}
+.footerp{
+font-family: "Bebas Neue";
+font-size: 33px;
+margin-left: 300px;
+}
+.footer{
+    margin-top: 111px;
+    text-decoration: overline;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+

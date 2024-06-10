@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
     <title>Connexion</title>
 </head>
 <body>
@@ -62,6 +63,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
+<div class="welcome-message">
+    <img src="Real madrid logo.png" alt="Real Madrid Logo" class="logo">
+    <h1>Welcome / Hola</h1>
+</div>
 
 <form method="POST" action="">
     <label for="email">Email</label>

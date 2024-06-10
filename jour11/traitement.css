@@ -1,0 +1,85 @@
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the welcome message */
+.welcome-message {
+    text-align: center;
+    margin-right: 40px; /* Add margin to the right to separate from the form */
+}
+
+.welcome-message h1  {
+    font-size: 2em;
+    color: #00529b;
+    margin: 10px 0;
+}
+
+.welcome-message .logo {
+    max-width: 80px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.inscription-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px; 
+}
+
+.inscription-form label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+    color: #333333;
+}
+
+.inscription-form input[type="text"],
+.inscription-form input[type="email"],
+.inscription-form input[type="password"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.inscription-form input[type="submit"] {
+    width: 100%;
+    padding: 0.75em;
+    border: none;
+    border-radius: 5px;
+    background-color: #00529b;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inscription-form input[type="submit"]:hover {
+    background-color: #004080;
+}
+
+.inscription-form p {
+    color: #ff0000;
+    font-size: 0.9em;
+    text-align: center;
+}

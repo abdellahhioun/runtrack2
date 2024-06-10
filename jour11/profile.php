@@ -1,5 +1,5 @@
 <?php
-session_start(); // Start the session
+session_start(); 
 
 $servername = "localhost";
 $username = "root";
@@ -14,27 +14,26 @@ try {
     die();
 }
 
-// Check if the user is logged in
 if (!isset($_SESSION['user_id'])) {
-    // Redirect to login page if not logged in
+
     header("Location: login.php");
     exit();
 }
 
-// Fetch user data from the database
+
 $stmt = $bdd->prepare("SELECT * FROM users WHERE id = :user_id");
 $stmt->bindParam(':user_id', $_SESSION['user_id']);
 $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-// Handle form submission
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Hash the password
     $nom = htmlspecialchars($_POST['nom']);
     $prenom = htmlspecialchars($_POST['prenom']);
 
-    // Update user data in the database
+
     $stmt = $bdd->prepare("UPDATE users SET email = :email, mdb = :password, nom = :nom, prenom = :prenom WHERE id = :user_id");
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':password', $password);
