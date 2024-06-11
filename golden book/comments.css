@@ -1,0 +1,106 @@
+/* starwars-comments.css */
+
+body {
+    background-color: #0f0f0f;
+    color: #fff;
+    font-family: 'Star Jedi', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #FFE81F;
+}
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #FFE81F;
+    border-radius: 10px;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-align: left;
+    color: #FFE81F;
+}
+
+textarea {
+    width: calc(100% - 40px);
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FFE81F;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFD700;
+}
+
+.comment {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #FFE81F;
+    border-radius: 10px;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: left;
+}
+
+.comment hr {
+    border: 1px solid #FFE81F;
+}
+
+.comment p strong {
+    color: #FFE81F;
+    font-size: 1.2em;
+}
+
+.comment p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+a {
+    color: #FFE81F;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FFD700;
+}
+
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('https://fonts.cdnfonts.com/s/7424/Starjedi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,44 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Black Ops One', sans-serif;
+    color: #ffcc00;
+}
+
+.comment-container {
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.comment-container p {
+    text-align: left;
+}
+
+.comment-container strong {
+    color: #ffcc00;
+}
+
+hr {
+    border: 1px solid #ffcc00;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}

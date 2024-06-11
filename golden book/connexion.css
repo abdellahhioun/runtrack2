@@ -1,0 +1,58 @@
+/* starwars-login.css */
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Star Jedi', Arial, sans-serif;
+    text-align: center;
+}
+
+form {
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid #FFE81F;
+    border-radius: 10px;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-align: left;
+    color: #FFE81F;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FFE81F;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFD700;
+}
+
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('https://fonts.cdnfonts.com/s/7424/Starjedi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
